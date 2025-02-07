@@ -10,8 +10,8 @@ A simple **Pomodoro Timer** Chrome extension with a **to-do list** for better pr
 - ✅ **Minimal & Aesthetic UI** – Inspired by modern productivity tools.
 
 ## 📸 Screenshots
-![Purple Pomodoro UI](./output/1.png)
 ![Purple Pomodoro UI](./output/2.png)
+![Purple Pomodoro UI](./output/1.png)
 ---
 
 ## 📦 Installation
