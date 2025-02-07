@@ -45,16 +45,16 @@ purple-pomodoro/
 │── manifest.json      # Chrome extension configuration
 │── README.md          # Documentation
 ```
-##👨‍💻 Technologies Used
+## 👨‍💻 Technologies Used
 HTML, CSS, JavaScript
 LocalStorage for saving tasks and timer settings
 Chrome Extensions API
 
 
-📃 License
+## 📃 License
 This project is licensed under the MIT License – you are free to modify and distribute it.
 
-📩 Contact
+## 📩 Contact
 For any suggestions or issues, feel free to open an issue or reach out at:
 
 📧 k.kov1917@gmail.com
