@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Pomodoro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2 class="heading">POMODORO</h2>
+
+    <!-- Toggle Between Timer and Tasks -->
+    <div class="tab-container">
+      <button id="timerTab" class="tab active">Timer</button>
+      <button id="tasksTab" class="tab">Tasks</button>
+    </div>
+
+    <!-- TIMER SECTION -->
+    <div id="timerSection" class="section">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring__circle" stroke-width="4" fill="transparent"/>
+        </svg>
+        <div class="timer-text">25:00</div>
+      </div>
+
+      <div class="custom-settings">
+        <label>Work Time (min): <input type="number" id="workTimeInput" min="1" value="25"></label>
+        <label>Break Time (min): <input type="number" id="breakTimeInput" min="1" value="5"></label>
+        <button id="saveTimeBtn">Save</button>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn"><span class="material-icons">play_arrow</span></button>
+        <button id="pauseBtn" class="btn"><span class="material-icons">pause</span></button>
+        <button id="resetBtn" class="btn"><span class="material-icons">replay</span></button>
+      </div>
+
+      <div class="phase-indicator">Work Time</div>
+    </div>
+
+    <!-- TASK SECTION -->
+    <div id="tasksSection" class="section hidden">
+      <h3>Your Tasks</h3>
+      <input type="text" id="taskInput" placeholder="Create a new task">
+      <button id="addTaskBtn">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

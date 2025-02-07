@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 10px;
+    width: 300px; /* Increased width */
+    height: 400px; /* Increased height */
+    background: linear-gradient(135deg, #c379e3 0%, #553c9a 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif; /* New modern font */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* TABS */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.tab {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+/* SECTIONS */
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* TIMER */
+.progress-ring {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.progress-ring__circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: #e9d8fd;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* CONTROLS */
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #e9d8fd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #e9d8fd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.phase-indicator {
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+/* TASK SECTION */
+#tasksSection {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+#taskInput {
+    width: 80%;
+    padding: 5px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+}
+
+#addTaskBtn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#taskList li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
